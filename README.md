@@ -1,4 +1,4 @@
-## Least Square (Curve Fitting)
+## 05. Least Square (Curve Fitting)
 Let some points `(x0, y0), (x1, y1),.....`, then for `y = ax + b` we need to follow this algorithm,
 ```
 sumx = 0, sumy = 0, sumxy = 0, sumx2 = 0
@@ -11,7 +11,7 @@ a = (n*sumxy-sumx*sumy)/(n*sumx2-sumx*sumx)
 b = (n*sumy-sumx*sumxy)/(n*sumx2-sumx*sumx)
 ```
 
-## Polynomial Method (Curve Fitting)
+## 06. Polynomial Method (Curve Fitting)
 Let `n` points `(x0, y0), (x1, y1),.....`, then for `y = ax + b` we need to follow this algorithm,
 ```
 degree = 2
@@ -51,7 +51,7 @@ for i=n-2 to i=0 :
 The array `ans[]` represents `a0, a1, a2......`  
 *N:B: This algorithm is only for 2nd degree polynomial.*
 
-## Newton's Forword Interpolation
+## 09. Newton's Forword Interpolation
 For `n` given points `(x0, y0), (x1, y1)......`, let `x[]` represents the values of `x` and `y[][0]` represents the values of `y`. `cp` represents the point to calculate.
 ```
 for j=1 to j<n :
@@ -71,7 +71,7 @@ for i=1 to i<n :
 print sum as answer
 ```
 
-## Newton's Divided Difference Interpolation
+## 11. Newton's Divided Difference Interpolation
 For `n` given points `(x0, y0), (x1, y1)......`, let `x[]` represents the values of `x` and `y[][0]` represents the values of `y`. `cp` represents the point to calculate.
 ```
 for j=1 to j<n :
@@ -88,7 +88,7 @@ for i=1 to i<n :
 print sum as answer
 ```
 
-## Trapizoidal Rule (Numerical Integration)
+## 12. Trapizoidal Rule (Numerical Integration)
 Let, a `n` (even number), `a` is lower limit and `b` is upper limit,. Then for `func(x)`,
 ```
 h = (b-a)/n
@@ -98,7 +98,7 @@ for i=1 to i<n :
 Ans = (s*h)/2
 ```
   
-## Simpson 1/3 Rule (Numerical Integration)
+## 13. Simpson 1/3 Rule (Numerical Integration)
 Let, a `n` (even number), `a` is lower limit and `b` is upper limit,. Then for `func(x)`,
 ```
 h = (b-a)/n
