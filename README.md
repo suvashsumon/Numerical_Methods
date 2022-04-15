@@ -35,6 +35,16 @@ for i=0 to i=MX_ITR :
         a = c
 Root = c
 ```
+## 03. Newton Raphson Method (Root Finding)
+Let, `f'(x)` is the first derivative of `f(x)`. If initial assumption of root is `a` then the root of `f(x)` can be calculated by following algorithm.
+```
+EPS = 0.01
+h = f(a)/f'(a)
+while absolute(h)>=EPS :
+    h = f(a)/f'(a)
+    a = a - h
+Root = a
+```
 
 ## 05. Least Square (Curve Fitting)
 Let some points `(x0, y0), (x1, y1),.....`, then for `y = ax + b` we need to follow this algorithm,
