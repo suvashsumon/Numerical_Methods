@@ -71,6 +71,25 @@ for i=1 to i<n :
 print sum as answer
 ```
 
+## 10. Lagrange Interpolation
+For `n` given points `(x0, y0), (x1, y1)......`, let `x[]` represents the values of `x` and `y[][0]` represents the values of `y`. `cp` represents the point to calculate.
+```
+Begin
+   res := 0 and tempSum := 0
+   for i := 1 to i<n, do
+      tempProd := 1
+      for j := 1 to i<n, do
+         if i ≠ j, then
+            tempProd := tempProd * (cp – x[j])/(x[i] – x[j])
+      done
+
+      tempPord := tempProd * fx[i]
+      res := res + tempProd
+   done
+   return res
+End
+```
+
 ## 11. Newton's Divided Difference Interpolation
 For `n` given points `(x0, y0), (x1, y1)......`, let `x[]` represents the values of `x` and `y[][0]` represents the values of `y`. `cp` represents the point to calculate.
 ```
