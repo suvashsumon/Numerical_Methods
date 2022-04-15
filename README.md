@@ -15,9 +15,9 @@ b = (n*sumy-sumx*sumxy)/(n*sumx2-sumx*sumx)
 Let `n` points `(x0, y0), (x1, y1),.....`, then for `y = ax + b` we need to follow this algorithm,
 ```
 degree = 2
-double x[], y[]
+x[], y[]
 
-double sumxy = 0, sumx2 = 0, sumx = 0, sumy = 0, sumx3 = 0, sumx4 = 0, sumx2y = 0
+sumxy = 0, sumx2 = 0, sumx = 0, sumy = 0, sumx3 = 0, sumx4 = 0, sumx2y = 0
 for i=0 to i<n :
     sumxy += x[i] * y[i]
     sumx2 += x[i] * x[i]
@@ -27,9 +27,9 @@ for i=0 to i<n :
     sumx4 += x[i] * x[i] * x[i] * x[i]
     sumx2y += x[i] * x[i] * y[i]
 
-double a[][] = { { n, sumx, sumx2, sumy },
-                 { sumx, sumx2, sumx3, sumxy },
-                 { sumx2, sumx3, sumx4, sumx2y } };
+a[][] = { { n, sumx, sumx2, sumy },
+          { sumx, sumx2, sumx3, sumxy },
+          { sumx2, sumx3, sumx4, sumx2y } }
 
 // making uppertriangular matrix
 for j=0 to j<n :
@@ -48,7 +48,7 @@ for i=n-2 to i=0 :
         sum+=a[i][j]*ans[j]
     ans[i] = (a[i][n]-sum)/a[i][i]
 ```
-The array `ans[]` represents `a0, a1, a2......`
+The array `ans[]` represents `a0, a1, a2......`  
 *N:B: This algorithm is only for 2nd degree polynomial.*
 
 ## Trapizoidal Rule (Numerical Integration)
