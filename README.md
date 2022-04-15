@@ -7,9 +7,28 @@ if f(a)*f(b)>=0 :
 
 c = a
 while (b-a)>=EPS :
-    c = (a+b)/2;
+    c = (a+b)/2
     if f(c)==0 :
-        break;
+        break
+    else if f(c)*f(a)<0 :
+        b = c
+    else
+        a = c
+Root = c
+```
+
+## 02. False Position/Regula-falsi (Root Finding)
+Let, `f(x)` has a root between `a` and `b`.
+```
+MX_ITR = 0.01
+if f(a)*f(b)>=0 :
+    Print -> Wrong Assumption
+
+c = a
+for i=0 to i=MX_ITR :
+    c = (a*f(b)-b*f(a))/(f(b)-f(a))
+    if f(c)==0 :
+        break
     else if f(c)*f(a)<0 :
         b = c
     else
