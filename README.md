@@ -51,6 +51,26 @@ for i=n-2 to i=0 :
 The array `ans[]` represents `a0, a1, a2......`  
 *N:B: This algorithm is only for 2nd degree polynomial.*
 
+## Newton's Forword Interpolation
+For `n` given points `(x0, y0), (x1, y1)......`, let `x[]` represents the values of `x` and `y[][0]` represents the values of `y`. `cp` represents the point to calculate.
+```
+for j=1 to j<n :
+    for i=0 to i<n-j :
+        y[i][j] = y[i+1][j-1] - y[i][j-1]
+
+sum = y[0][0]
+h = x[1]-x[0]
+hsum = 1, xsum = 1, fact = 1
+
+for i=1 to i<n :
+    xsum = xsum*(cp-x[i-1])
+    hsum = hsum*h
+    fact = fact*i
+    sum = sum + (y[0][i]*xsum)/(hsum*fact)
+
+print sum as answer
+```
+
 ## Trapizoidal Rule (Numerical Integration)
 Let, a `n` (even number), `a` is lower limit and `b` is upper limit,. Then for `func(x)`,
 ```
