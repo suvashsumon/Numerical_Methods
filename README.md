@@ -1,6 +1,6 @@
-#### Computer Science & Engineering
 # MATH2232 : Numerical Methods Lab
 ### Suvash Kumar
+***
    
 ## 01. Bisection Method (Root Finding)
 Let, `f(x)` has a root between `a` and `b`.
