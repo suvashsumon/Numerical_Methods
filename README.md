@@ -45,6 +45,18 @@ while absolute(h)>=EPS :
     a = a - h
 Root = a
 ```
+## 06. Secant Method (Root Finding)
+Let, a function `f(x)` and it's two initial approximation `a` and `b`. Then the root of `f(x)` can be find by following algorithm.
+```
+EPS = 0.001
+root = a - ((f(b)*(a-b))/(f(a)-f(b)))
+next = root
+while absolute(next-a) > EPS :
+    next = root - ((f(root)*(b-root))/(f(b)-f(root)))
+    b = root
+    root = next
+Return root
+```
 
 ## 05. Least Square (Curve Fitting)
 Let some points `(x0, y0), (x1, y1),.....`, then for `y = ax + b` we need to follow this algorithm,
