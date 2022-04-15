@@ -1,3 +1,16 @@
+## Least Square (Curve Fitting)
+Let some points `(x0, y0), (x1, y1),.....`, then for `y = ax + b` we need to follow this two equation,
+```
+sumx = 0, sumy = 0, sumxy = 0, sumx2 = 0
+for i=0 to i<n :
+    sumx = sumx + x[i]
+    sumy = sumy + y[i]
+    sumx2 = sumx2 + x[i]*x[i]
+    sumxy = sumxy + x[i]*y[i]
+a = (n*sumxy-sumx*sumy)/(n*sumx2-sumx*sumx)
+b = (n*sumy-sumx*sumxy)/(n*sumx2-sumx*sumx)
+```
+
 ## Trapizoidal Rule (Numerical Integration)
 Let, a `n` (even number), `a` is lower limit and `b` is upper limit,. Then for `func(x)`,
 ```
