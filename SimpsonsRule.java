@@ -3,13 +3,13 @@ import java.util.Scanner;
 public class SimpsonsRule {
     public static double f(double x)
     {
-        return 1/(1+x*x);
+        return 1/(1+x);
     }
 
     public static double simpsonRule(double a, double b)
     {
         double n = 4;
-        double h = (a-b)/n;
+        double h = (b-a)/n;
         double x[] = new double[10000];
         double fx[] = new double[10000];
         for(int i=0; i<=n; i++)
