@@ -45,7 +45,7 @@ while absolute(h)>=EPS :
     a = a - h
 Root = a
 ```
-## 06. Secant Method (Root Finding)
+## 04. Secant Method (Root Finding)
 Let, a function `f(x)` and it's two initial approximation `a` and `b`. Then the root of `f(x)` can be find by following algorithm.
 ```
 EPS = 0.001
