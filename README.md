@@ -1,3 +1,22 @@
+## 01. Bisection Method (Root Finding)
+Let, `f(x)` has a root between `a` and `b`.
+```
+EPS = 0.01
+if f(a)*f(b)>=0 :
+    Print -> Wrong Assumption
+
+c = a
+while (b-a)>=EPS :
+    c = (a+b)/2;
+    if f(c)==0 :
+        break;
+    else if f(c)*f(a)<0 :
+        b = c
+    else
+        a = c
+Root = c
+```
+
 ## 05. Least Square (Curve Fitting)
 Let some points `(x0, y0), (x1, y1),.....`, then for `y = ax + b` we need to follow this algorithm,
 ```
