@@ -71,6 +71,23 @@ for i=1 to i<n :
 print sum as answer
 ```
 
+## Newton's Divided Difference Interpolation
+For `n` given points `(x0, y0), (x1, y1)......`, let `x[]` represents the values of `x` and `y[][0]` represents the values of `y`. `cp` represents the point to calculate.
+```
+for j=1 to j<n :
+    for i=0 to i<n-j :
+        y[i][j] = (y[i][j-1]-y[i+1][j-1])/(x[i]-x[i+j])
+
+sum = y[0][0]
+xsum = 1
+
+for i=1 to i<n :
+    xsum = xsum*(cp-x[i-1]);
+    sum = sum + xsum*y[0][i];
+
+print sum as answer
+```
+
 ## Trapizoidal Rule (Numerical Integration)
 Let, a `n` (even number), `a` is lower limit and `b` is upper limit,. Then for `func(x)`,
 ```
