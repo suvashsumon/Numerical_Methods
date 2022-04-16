@@ -49,7 +49,7 @@ while absolute(h)>=EPS :
 Root = a
 ```
 ## 04. Secant Method (Root Finding)
-Let, a function `f(x)` and it's two initial approximation `a` and `b`. Then the root of `f(x)` can be find by following equation and algorithm.
+Let, a function `f(x)` and it's two initial approximation `a` and `b`. Then the root of `f(x)` can be find by following equation and algorithm.<br>
 <img src="https://render.githubusercontent.com/render/math?math=root=a-\frac{f(b)(a-b)}{f(a)-f(b)}">
           
 and
@@ -69,8 +69,8 @@ Return root
 
 ## 05. Least Square (Curve Fitting)
 Let some points `(x0, y0), (x1, y1),.....`, then for `y = ax + b` we need to follow this equation and algorithm,
-$$a=\frac{n\sum{xy}-\sum{x}\sum{y}}{n\sum{x^2}-(\sum{x})^2}$$
-$$b=\frac{n\sum{y}-\sum{x}\sum{xy}}{n\sum{x^2}-(\sum{x})^2}$$
+<img src="https://render.githubusercontent.com/render/math?math=a=\frac{n\sum{xy}-\sum{x}\sum{y}}{n\sum{x^2}-(\sum{x})^2}">
+<img src="https://render.githubusercontent.com/render/math?math=b=\frac{n\sum{y}-\sum{x}\sum{xy}}{n\sum{x^2}-(\sum{x})^2}">
 ```
 sumx = 0, sumy = 0, sumxy = 0, sumx2 = 0
 for i=0 to i<n :
