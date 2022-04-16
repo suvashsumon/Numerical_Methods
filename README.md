@@ -3,6 +3,8 @@
 
 ## 01. Bisection Method (Root Finding)
 Let, `f(x)` has a root between `a` and `b`.
+<p style="text-align:center;"><img src="https://render.githubusercontent.com/render/math?math=c=\frac{a+b}{2}"></p>
+
 ```
 EPS = 0.01
 if f(a)*f(b)>=0 :
