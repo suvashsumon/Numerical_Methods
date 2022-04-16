@@ -70,8 +70,10 @@ Return root
 
 ## 05. Least Square (Curve Fitting)
 Let some points `(x0, y0), (x1, y1),.....`, then for `y = ax + b` we need to follow this equation and algorithm,
+
 &nbsp;
 <img src="https://render.githubusercontent.com/render/math?math=a=\frac{n\sum{xy}-\sum{x}\sum{y}}{n\sum{x^2}-(\sum{x})^2}">
+
 &nbsp;
 <img src="https://render.githubusercontent.com/render/math?math=b=\frac{n\sum{y}-\sum{x}\sum{xy}}{n\sum{x^2}-(\sum{x})^2}">
 ```
