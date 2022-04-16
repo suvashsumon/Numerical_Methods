@@ -50,12 +50,9 @@ Root = a
 ```
 ## 04. Secant Method (Root Finding)
 Let, a function `f(x)` and it's two initial approximation `a` and `b`. Then the root of `f(x)` can be find by following equation and algorithm.
-&nbsp;
-<img src="https://render.githubusercontent.com/render/math?math=root=a-\frac{f(b)(a-b)}{f(a)-f(b)}">
-&nbsp;       
-and
-&nbsp;         
-<img src="https://render.githubusercontent.com/render/math?math=next=root-\frac{f(root)(a-root)}{f(a)-f(root)}">
+<p style="text-align:center;"><img src="https://render.githubusercontent.com/render/math?math=root=a-\frac{f(b)(a-b)}{f(a)-f(b)}" style="text-align:center;"></p>  
+and        
+<p style="text-align:center;"><img src="https://render.githubusercontent.com/render/math?math=next=root-\frac{f(root)(a-root)}{f(a)-f(root)}"></p>
 
 ```
 EPS = 0.001
@@ -70,12 +67,9 @@ Return root
 
 ## 05. Least Square (Curve Fitting)
 Let some points `(x0, y0), (x1, y1),.....`, then for `y = ax + b` we need to follow this equation and algorithm,
-
-&nbsp;
-<img src="https://render.githubusercontent.com/render/math?math=a=\frac{n\sum{xy}-\sum{x}\sum{y}}{n\sum{x^2}-(\sum{x})^2}">
-
-&nbsp;
-<img src="https://render.githubusercontent.com/render/math?math=b=\frac{n\sum{y}-\sum{x}\sum{xy}}{n\sum{x^2}-(\sum{x})^2}">
+<p style="text-align:center;"><img src="https://render.githubusercontent.com/render/math?math=a=\frac{n\sum{xy}-\sum{x}\sum{y}}{n\sum{x^2}-(\sum{x})^2}"></p>
+and
+<p style="text-align:center;"><img src="https://render.githubusercontent.com/render/math?math=b=\frac{n\sum{y}-\sum{x}\sum{xy}}{n\sum{x^2}-(\sum{x})^2}"></p>
 ```
 sumx = 0, sumy = 0, sumxy = 0, sumx2 = 0
 for i=0 to i<n :
