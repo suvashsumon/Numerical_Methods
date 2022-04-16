@@ -50,9 +50,12 @@ Root = a
 ```
 ## 04. Secant Method (Root Finding)
 Let, a function `f(x)` and it's two initial approximation `a` and `b`. Then the root of `f(x)` can be find by following equation and algorithm.
-<img src="https://render.githubusercontent.com/render/math?math=root=a-\frac{f(b)(a-b)}{f(a)-f(b)}>
+<img src="https://render.githubusercontent.com/render/math?math=root=a-\frac{f(b)(a-b)}{f(a)-f(b)}">
+          
 and
-<img src="https://render.githubusercontent.com/render/math?math=next=root-\frac{f(root)(a-root)}{f(a)-f(root)}>
+          
+<img src="https://render.githubusercontent.com/render/math?math=next=root-\frac{f(root)(a-root)}{f(a)-f(root)}">
+
 ```
 EPS = 0.001
 root = a - ((f(b)*(a-b))/(f(a)-f(b)))
